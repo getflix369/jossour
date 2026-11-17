@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base: #041014;
+  --bg-gradient: linear-gradient(135deg, #030e12 0%, #07262e 50%, #061c24 100%);
+  --bg-glow-1: rgba(20, 184, 166, 0.28);
+  --bg-glow-2: rgba(212, 175, 55, 0.16);
+  --bg-glow-3: rgba(16, 185, 129, 0.18);
+  --glass-surface: linear-gradient(145deg, rgba(10, 38, 46, 0.74), rgba(6, 22, 28, 0.62));
+  --glass-elevated: linear-gradient(145deg, rgba(13, 47, 56, 0.88), rgba(7, 27, 34, 0.78));
+  --glass-border: rgba(255, 255, 255, 0.13);
+  --glass-rim: rgba(255, 255, 255, 0.22);
+  --text-primary: #f8fafc;
+  --text-secondary: #d6ebe9;
+  --text-muted: #8ab3b0;
+  --accent-gold: #eab308;
+  --accent-gold-soft: rgba(234, 179, 8, 0.18);
+  --input-bg: rgba(4, 18, 23, 0.76);
+  --row-hover: rgba(20, 184, 166, 0.08);
+  --logo-arch-stroke: #f0fdfa;
+}
+
+html[data-theme="crystal-light"] {
+  --bg-base: #e7f4f2;
+  --bg-gradient: linear-gradient(135deg, #dff2ef 0%, #f4faf9 48%, #f7f0e0 100%);
+  --bg-glow-1: rgba(13, 148, 136, 0.16);
+  --bg-glow-2: rgba(196, 154, 69, 0.18);
+  --bg-glow-3: rgba(6, 182, 212, 0.13);
+  --glass-surface: linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(240, 250, 248, 0.74));
+  --glass-elevated: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(244, 252, 250, 0.88));
+  --glass-border: rgba(15, 76, 92, 0.13);
+  --glass-rim: rgba(255, 255, 255, 1);
+  --text-primary: #06242b;
+  --text-secondary: #163a42;
+  --text-muted: #42636b;
+  --accent-gold: #9a6b0c;
+  --accent-gold-soft: rgba(154, 107, 12, 0.14);
+  --input-bg: rgba(255, 255, 255, 0.95);
+  --row-hover: rgba(13, 148, 136, 0.06);
+  --logo-arch-stroke: #0f4c5c;
+}
+
+body {
+  font-family: 'Cairo', 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.logo-arch-contrast { stroke: var(--logo-arch-stroke); }
